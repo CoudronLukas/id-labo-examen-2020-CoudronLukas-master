@@ -171,7 +171,8 @@ h6 {
 }
 
 p{
-    margin: 0 0 24px;    
+    margin-top: 24px; 
+    margin-bottom: 12px;   
 }
 
 ol,
@@ -181,11 +182,6 @@ table,
 address,
 figure {
     margin: 0 0 24px;
-}
-
-ul,
-ol {
-    padding-left: 24px;
 }
 
 li{
@@ -842,20 +838,16 @@ input:disabled {
 
 .c-custom-option__fake-input--checkbox {
     border-radius: 20px;
+    background-color: var(--global-color-neutral-x-light);
+    color: var(--global-input-color);
     display: flex;
     justify-content: center;
     align-items: center;
-
-    display: flex;
     width: fit-content;
     height: fit-content;
     padding: 0.5rem  1rem;
     border: none;
     margin-right: 8px;
-
-    background-color: var(--global-color-neutral-x-light);
-    color: var(--global-input-color);
-
 }
 
 .c-custom-option__fake-input--radio {
@@ -863,7 +855,6 @@ input:disabled {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
   
@@ -878,6 +869,8 @@ input:disabled {
     display: flex;
     flex-direction: row;
     list-style: none;
+    flex-flow: row wrap;
+    padding: 0;
 }
 /*------------------------------------*\
 #UTILITIES
