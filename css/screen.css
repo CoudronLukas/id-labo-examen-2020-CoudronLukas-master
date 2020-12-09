@@ -131,6 +131,11 @@ img {
     max-width: 100%;
     vertical-align: top;
 }
+
+svg{
+    height: 14px;
+    width: 18px;
+}
 /*
     Elements: typography
     ---
@@ -534,6 +539,23 @@ input:disabled {
     ---
     Website main logo
 */
+.space-between{
+    display: flex;
+    justify-content: space-between;
+}
+
+.c-bar-blue{
+    background-color: #009DE6;
+    height: 10px;
+    width: 300;
+}
+
+.c-bar-grey{
+    background-color: #35374d;
+    height: 10px;
+    width: 500px;
+}
+
 .bold{
     font-weight: 600;    
 }
@@ -644,6 +666,22 @@ input:disabled {
     ---
     Everything form related here
 */
+
+
+.c-button-volgende{
+    background-color: var(--global-color-alpha);
+    color: var(--global-color-neutral-xxxx-light);
+    width: 208px;
+    height: 48px;
+    border-style: none;
+    border-radius: 3px;
+    box-shadow: 0 0 0 3px var(--global-color-alpha);
+}
+
+.c-button-back{
+    background-color: var(--global-color-neutral-xxxx-light);
+    border-style: none;
+}
 
 .c-form-field--option {
     display: -webkit-flex;
