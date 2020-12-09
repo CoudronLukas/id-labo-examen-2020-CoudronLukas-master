@@ -212,11 +212,20 @@ figcaption {
     margin-top: 8px;
 }
 
+textarea{
+    display: block;
+    border-radius: 6px;
+    width: 100% !important;
+    height: 160px !important;
+    margin-right: 0px !important;
+}
+
 hr {
     border: 0;
     height: 1px;
     background: LightGrey;
-    margin: 0 0 24px;
+    margin-top: 24px;
+    margin-bottom: 24px;
 }
 
 a {
@@ -539,6 +548,8 @@ input:disabled {
     ---
     Website main logo
 */
+
+
 .space-between{
     display: flex;
     justify-content: space-between;
@@ -547,13 +558,15 @@ input:disabled {
 .c-bar-blue{
     background-color: #009DE6;
     height: 10px;
-    width: 300;
+    width: 100%;
+    margin-right: 250px;
 }
 
 .c-bar-grey{
     background-color: #35374d;
     height: 10px;
-    width: 500px;
+    width: 66%;
+
 }
 
 .bold{
