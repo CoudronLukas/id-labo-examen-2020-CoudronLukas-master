@@ -106,13 +106,13 @@ body{
 */
 
 ::-moz-selection {
-    background: orange;
+    background: var(--global-background1);
     color: white;
     text-shadow: none;
 }
 
 ::selection {
-    background: orange;
+    background: var(--global-background1);
     color: white;
     text-shadow: none;
 }
@@ -188,8 +188,7 @@ ol {
     padding-left: 24px;
 }
 
-li ul,
-li ol {
+li{
     margin-bottom: 0;
 }
 
@@ -597,6 +596,12 @@ input:disabled {
     Card with box shadow
 */
 
+.c-checkbox{
+    width: 20%;
+    background-color: var(--global-color-alpha);
+    list-style: none;
+}
+
 .c-card {
     background-color: white;
     border-radius: var(--global-borderRadius);
@@ -877,6 +882,10 @@ input:disabled {
     border-radius: 100%;
 }
 
+.c-form{
+    display: flex;
+    flex-direction: row;
+}
 /*------------------------------------*\
 #UTILITIES
 \*------------------------------------*/
