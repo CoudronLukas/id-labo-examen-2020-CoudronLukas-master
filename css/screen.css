@@ -47,7 +47,10 @@
     --global-color-neutral-x-dark: #606274;
     --global-color-neutral-xx-dark: #4b4c60;
     --global-color-neutral-xxx-dark: #35374d;
-    --global-color-neutral-xxxx-dark: #20223a;
+    --global-color-neutral-xxxx-dark: #0f0f0f;
+
+    --text-color:(--global-color-neutral-xxxx-dark);
+    --textarea-color:(--global-background-color);
     /* fonts */
 
     /* shadows */
@@ -65,6 +68,41 @@
     /* transitions */
     --global-transitionTiming-alpha: .1s ease-out;    
 }    
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --global-background-color:#17161A;
+        --global-color-alpha-light: #4F95FF;
+        --global-color-alpha: #8B33FB;
+        --global-color-alpha-dark: #2E77E6;
+        --global-color-alpha-x-dark: #1B4186;
+        --global-color-alpha-transparent: #3385ffbf;
+        --global-color-alpha-x-transparent: #3385ff4d;
+    
+        --global-color-neutral-xxxx-light: #F5F6FA;
+        --global-color-neutral-xxx-light: #E2E3E7;
+        --global-color-neutral-xx-light: #caccd4;
+        --global-color-neutral-x-light: #b5b6c0;
+        --global-color-neutral-light: #a0a1ad;
+        --global-color-neutral: #8b8c9a;
+        --global-color-neutral-dark: #757787;
+        --global-color-neutral-x-dark: #606274;
+        --global-color-neutral-xx-dark: #4b4c60;
+        --global-color-neutral-xxx-dark: #232226;
+        --global-color-neutral-xxxx-dark: #20223a;
+
+
+        --global-page-color: var(--global-color-neutral-xxxx-light);
+        --global-page-backgroundColor: var(--global-color-neutral-xxxx-dark);
+        --var-card-background : var(--global-color-neutral-xxx-dark);
+        --label-color: var(--color-neutral-xxx-light);
+        --toggle-background: var(--global-color-neutral-xx-dark);
+        --global-input-background: var(--global-color-xxx-dark);
+        --input-color:(--global-color-xxxx-dark);
+        --textarea-color:(--global-background-color);
+        --text-color:(--global-color-neutral-xxxx-light);
+    }
+}
 
 /*------------------------------------*\
 #GENERIC
@@ -146,6 +184,7 @@ h1,
 h2,
 h3 {
     font-weight: 600;
+    color: var(--text-color);
 }
 
 h1 {
@@ -178,6 +217,7 @@ h6 {
 p{
     margin-top: 24px; 
     margin-bottom: 12px;   
+    color: var(--text-color) !important;
 }
 
 ol,
@@ -218,6 +258,7 @@ textarea{
     width: 100% !important;
     height: 160px !important;
     margin-right: 0px !important;
+    background-color: var(--textarea-color);
 }
 
 hr {
@@ -556,7 +597,7 @@ input:disabled {
 }
 
 .c-bar-blue{
-    background-color: var(--global-color-alpha);
+    background-color: var(--global-color-neutral-x-light);
     height: 10px;
     width: 75%;
     margin-right: 250px;
@@ -567,7 +608,7 @@ input:disabled {
 }
 
 .c-bar-grey{
-    background-color: var(--global-color-neutral-x-light);
+    background-color: var(--global-color-alpha);
     height: 10px;
     width: 66%;
     margin-top: auto;
