@@ -50,7 +50,7 @@
     --global-color-neutral-xxxx-dark: #0f0f0f;
 
     --text-color:(--global-color-neutral-xxxx-dark);
-    --textarea-color:(--global-background-color);
+    --textarea-color:(var(--global-background-color));
     /* fonts */
 
     /* shadows */
@@ -100,7 +100,7 @@
         --global-input-background: var(--global-color-xxx-dark);
         --input-color:(--global-color-xxxx-dark);
         --textarea-color:(--global-background-color);
-        --text-color:(--global-color-neutral-xxxx-light);
+        --text-color:var(--global-color-neutral-xxxx-light);
     }
 }
 
@@ -118,16 +118,18 @@ html {
     font-size: 16px;
     line-height: 1.5;
     font-family: sans-serif;
-    color: Black;
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: white;
     font-family: 'Inter UI', Courier, monospace;
+
 }
 
 body{
     background-color: var(--global-background-color);
+    color: var(--text-color) !important;
+
 }
 
 *,
@@ -184,7 +186,6 @@ h1,
 h2,
 h3 {
     font-weight: 600;
-    color: var(--text-color);
 }
 
 h1 {
@@ -217,7 +218,7 @@ h6 {
 p{
     margin-top: 24px; 
     margin-bottom: 12px;   
-    color: var(--text-color) !important;
+    color: var(--text-color);
 }
 
 ol,
@@ -1289,6 +1290,12 @@ input:disabled {
     USE THEM INLINE!
 */
 
+@media(min-width:32rem){
+    .c-card
+    {
+    border-radius: 8px;        
+    }
+}
 /* Extra small devices (portrait phones, less than 576px)
 No media query since this is the default in mobile first design
 */
