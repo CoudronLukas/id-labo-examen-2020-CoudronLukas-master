@@ -35,6 +35,7 @@
     --global-color-alpha-x-dark: #1B4186;
     --global-color-alpha-transparent: #3385ffbf;
     --global-color-alpha-x-transparent: #3385ff4d;
+    --global-color-border-top:#4E00EA;
 
     --global-color-neutral-xxxx-light: #F5F6FA;
     --global-color-neutral-xxx-light: #E2E3E7;
@@ -87,7 +88,7 @@ html {
 }
 
 body{
-    background-image: var(--global-background-color);
+    background-color: var(--global-background-color);
 }
 
 *,
@@ -168,7 +169,10 @@ h6 {
     margin: 0 0 24px;
 }
 
-p,
+p{
+    margin: 0 0 24px;    
+}
+
 ol,
 ul,
 dl,
@@ -539,6 +543,10 @@ input:disabled {
     ---
     Website main logo
 */
+.bold{
+    font-weight: 600;    
+}
+
 .c-button-send{
     width: 100%;
     height: var(--global-whitespace-xl);
@@ -587,10 +595,10 @@ input:disabled {
 .c-card {
     background-color: white;
     border-radius: var(--global-borderRadius);
-    box-shadow: 0 0 0 var(--global-borderWidth) rgba(0,0,0, 0.05), 0 2px 4px rgba(0,0,0,.075);
+    box-shadow: 0px 0px 8px 3px rgba(0,0,0,0.05);
     overflow: hidden;
     border-radius: 4px;
-    border-top: 0.5rem solid var(--global-color-alpha-very-light);
+    border-top: 0.5rem solid var(--global-color-border-top);
 }
 
 /* Add padding to child for more flexibility */
