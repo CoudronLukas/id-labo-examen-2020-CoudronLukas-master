@@ -161,7 +161,7 @@ h2 {
 }
 
 h3 {
-    font-size: 26px;
+    font-size: 16px;
     line-height: 32px;
     margin: 0 0 24px;
 }
@@ -224,8 +224,8 @@ hr {
     border: 0;
     height: 1px;
     background: LightGrey;
-    margin-top: 24px;
-    margin-bottom: 24px;
+    margin-top: 16px;
+    margin-bottom: 16px;
 }
 
 a {
@@ -556,17 +556,25 @@ input:disabled {
 }
 
 .c-bar-blue{
-    background-color: #009DE6;
+    background-color: var(--global-color-alpha);
     height: 10px;
-    width: 100%;
+    width: 75%;
     margin-right: 250px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 0px;
+    border-radius: 10px;
 }
 
 .c-bar-grey{
-    background-color: #35374d;
+    background-color: var(--global-color-neutral-x-light);
     height: 10px;
     width: 66%;
-
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 0px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
 .bold{
