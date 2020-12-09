@@ -462,11 +462,6 @@ input:disabled {
     Small reusable object to remove default list styling from lists
 */
 
-.o-list {
-    list-style: none;
-    padding: 0;
-}
-
 .o-section {
     position: relative;
 }
@@ -599,7 +594,6 @@ input:disabled {
 .c-checkbox{
     width: 20%;
     background-color: var(--global-color-alpha);
-    list-style: none;
 }
 
 .c-card {
@@ -782,7 +776,7 @@ input:disabled {
 }   
 
 .c-option--hidden:checked + .c-custom-option {
-    /* background-color: red   ; */
+    color: var(--global-color-neutral-xxxx-light);
 }
 
 .c-option--hidden:checked + .c-custom-option .c-custom-option__symbol {
@@ -792,6 +786,9 @@ input:disabled {
 
 .c-option--hidden:checked + .c-custom-option  .c-custom-option__fake-input--checkbox{
     background-color: var(--global-color-alpha); /* Hier kleur aanpassen voor background checkbox*/
+    width: fit-content;
+    height: fit-content;
+    
 }
 
 .c-option--hidden:checked + .c-custom-option .c-custom-option__fake-input--radio{
@@ -804,9 +801,7 @@ input:disabled {
 }
 
 .c-option-list__item{
-
     margin-bottom: 12px;
-
 }
 
 .c-option--hidden:focus + .c-custom-option .c-custom-option__fake-input{
@@ -846,10 +841,20 @@ input:disabled {
 
 
 .c-custom-option__fake-input--checkbox {
-    border-radius: 3px;
+    border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    padding: 0.5rem  1rem;
+    border: none;
+    margin-right: 8px;
+
+    background-color: var(--global-color-neutral-x-light);
+    color: var(--global-input-color);
 
 }
 
@@ -861,19 +866,6 @@ input:disabled {
 
 }
 
-
-.c-custom-option__symbol {
-    transition: 0.1s ease;  
-    opacity: 0  ;
-    display: block;
-}
-
-.c-custom-option__fake-input--checkbox .c-custom-option__symbol {
-    width: 10px;
-    height: 10px;
-    fill: white; /*kleur check van checkbox*/
-    
-}
   
 .c-custom-option__fake-input--radio .c-custom-option__symbol  {
     width: 6px;
@@ -885,6 +877,7 @@ input:disabled {
 .c-form{
     display: flex;
     flex-direction: row;
+    list-style: none;
 }
 /*------------------------------------*\
 #UTILITIES
